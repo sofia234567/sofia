@@ -1,0 +1,137 @@
+body {
+    background-color: #F8DA92;
+    font-family: Arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.navegacion {
+    width: 1000px;
+    margin: 30px auto;
+    background: #828282;
+}
+
+.navegacion ul {
+    list-style: none; 
+}
+
+.menu > li {
+    position: relative; 
+    display: inline-block; 
+}
+
+.menu > li > a {
+    display: block; 
+    padding: 15px 20px; 
+    color: #FFD700;
+    font-family: "open sans";
+    text-decoration: none; 
+}
+
+.menu li:hover > a {
+    color: #FFFF00;
+    transition: all .3s; 
+}
+
+.submenu {
+    position: absolute;
+    background: #333333;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0; 
+    transition: opacity 1.5s;
+}
+.submenu li a{
+	display: block; 
+	padding: 15px;
+	color:  #fff;
+	font-family: "Open sans" ;
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+	visibility: visible; 
+	opacity: 1;
+}
+.subm{
+	position: absolute;
+	background: 333333;
+	width: 120%;
+	visibility: hidden; 
+	opacity: 0;
+	transition: opacity 1.5a;
+}
+.subm li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: "open sans";
+	text-decoration: none;
+}
+.menu li:hover .subm{
+	visibility:visible;
+	opacity: 1;
+}
+h1.titulo{
+	color: black;
+	font-family:"monospace";
+	text-align: center;
+	 
+}
+h1.titulo2{
+	color: black;
+	font-family:"monospace";
+	text-align: justify;
+	 
+}
+p.pa1{
+	color: black;
+	font-family:"monospace";
+	text-align: justify;
+}
+.img{
+	width: 300px;
+	height: 300px;
+padding: 10px;
+margin: 10px;
+border: 2px solid black;
+display: block;
+margin: 0px auto;
+}
+
+   #tabla{
+	   margin :150px auto;
+	   width :600px;
+	   float: center; /*ubica un elemento en su contenedor segun la posicion dada*/
+   }
+   table{ 
+   background-color: white; 
+   text-align: leftt ;
+   border-collapse: collapse; /*fusionar los bordes*/
+   width:100%;
+   
+  }
+  th, td{ 
+    border: solid 1px black;
+	padding: 5px;
+	
+  } 
+  thead{/*bloque de filas*/
+  background-color: #246355;
+  border-bottom: solid 5px #0F362D; /*establece el estilo del borde inferior de un elemento, se define el estilo, grosor y color*/
+  color:white;
+  
+  }
+  tr:nth-child (even){/*seleccion de varios elementos hijo, seleccion de una linea y otra no*/ 
+  background-color: #ddd;
+  }
+  tr:hover td{ /*al seleccionar una fila colorea el espacio y la letra la pasa a blanco*/
+  background-color: #369681:
+  color:white;
+  } 
+   
